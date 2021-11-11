@@ -1,6 +1,4 @@
 public class Teste {
-    private static final int _2000 = 2000;
-
     public static void main(String[] args) {
 
         ContaCorrente conta=new ContaCorrente();
@@ -10,10 +8,10 @@ public class Teste {
         conta.saca(1500);
         
 
-        System.out.println("Saldo: "+conta.getSaldo());
-        conta.limiteUtilizado();
-        System.out.println("Limite Disponível : "+conta.getLimite());
-        System.out.println("Limite Utilizado : "+conta.getLimite());
+         System.out.println("Saldo: "+conta.getSaldo());
+         conta.limiteUtilizado();
+         System.out.println("Limite Disponível : "+conta.getLimite());
+         System.out.println("Limite Utilizado : "+conta.getLimite());
               
         if(conta.getLimite()>0){
             System.out.println("Cheque especial");
