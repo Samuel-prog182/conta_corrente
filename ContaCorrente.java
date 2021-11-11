@@ -51,11 +51,11 @@ public class ContaCorrente{
         this.status = status;
         
     }
-  public void limiteUtilizado(){
+    public void limiteUtilizado(){
       if(limite != 2000);
       double utilizado;
       utilizado = getLimite()-2000;
       System.out.println("Limite Utilizado: "+utilizado);
-  }
+    }
 
 }
