@@ -11,14 +11,17 @@ public class Teste {
         
 
         System.out.println("Saldo: "+conta.getSaldo());
-        System.out.println("Limite utilizado : "+conta.getLimite());
-
-    
-
-
-
+        conta.limiteUtilizado();
+        System.out.println("Limite Disponível : "+conta.getLimite());
+        System.out.println("Limite Utilizado : "+conta.getLimite());
+              
+        if(conta.getLimite()>0){
+            System.out.println("Cheque especial");
+        }
+        else{
+            System.out.println("No azul");
         
-    }
-
-    
+            
+        }    
+    }    
 }

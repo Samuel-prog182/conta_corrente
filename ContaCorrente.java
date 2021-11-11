@@ -5,13 +5,14 @@ public class ContaCorrente{
     private boolean status;
    //status true estou no cheque especial
    //status false estou com a conta no azul
-    private double limite;
+    private double limite=2000;
     
 
      public void saca(double valor){
-        if(valor > saldo && limite < 2000){
+        if(valor > saldo && limite <= 2000){
             status=true;
-            limite+=saldo-valor;
+            saldo=saldo-valor;
+            limite=limite+saldo;
         }
         else{
             status=false;
@@ -50,6 +51,11 @@ public class ContaCorrente{
         this.status = status;
         
     }
-  
+  public void limiteUtilizado(){
+      if(limite != 2000);
+      double utilizado;
+      utilizado = getLimite()-2000;
+      System.out.println("Limite Utilizado: "+utilizado);
+  }
 
 }
